@@ -2,16 +2,30 @@
   "name": "messenger",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://aylaram.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "@emotion/cache": "^11.9.3",
+    "@emotion/react": "^11.9.3",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.9.3",
+    "@fontsource/roboto": "^4.5.7",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.4",
+    "gh-pages": "^4.0.0",
+    "linkify-html": "^3.0.5",
+    "linkifyjs": "^3.0.5",
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "save-dev": "^0.0.1-security"
   },
   "devDependencies": {
     "@types/node": "17.0.42",
